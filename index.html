@@ -11,6 +11,7 @@
     <title>Vektor Bootstrap Proj Shot</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav
         class="navbar navbar-light justify-content-between px-5 m-2 border-bottom border-1 border-dark"
@@ -24,15 +25,16 @@
       </nav>
     </header>
 
+    <!-- main section -->
     <main class="container-fluid px-5 mt-5">
       <div class="row align-items-center">
         <div class="col-md-6">
           <div
-            class="rounded-pill py-2 mb-4 px-4 fw-bold d-inline-block main-section-span"
+            class="rounded-pill py-2 mb-4 px-4 fw-bold d-inline-block main-section-span bg-primary-subtle text-primary"
           >
             Release 4.2- All Systems Operational
           </div>
-          <h1 class="fw-bold mb-4 main-section-padding">
+          <h1 class="fw-bold mb-4 main-section-font">
             Cloud infrastructure, minus the complexity.
           </h1>
           <p class="mb-4 text-secondary pe-5 fs-5">
@@ -63,5 +65,76 @@
         </div>
       </div>
     </main>
+
+    <!-- Cards section -->
+    <div class="container-fluid px-5 mt-5 mb-5">
+      <div class="row g-4">
+        <!-- Cards 1 -->
+        <div class="col-md-4">
+          <div class="card p-4 rounded-4 border border-3 border-primary h-100">
+            <img
+              src="/Images/Data Analytics Dashboard.avif"
+              alt="Speedometer"
+              class="img-fluid w-100 rounded-3 mb-3 object-fit-cover"
+              style="height: 150px"
+            />
+            <span
+              class="d-inline-block align-self-start fw-bold bg-primary-subtle text-primary rounded px-3 py-1 mb-3"
+            >
+              01 . Speed</span
+            >
+            <h4 class="fw-bold">Sub-15ms Latency</h4>
+            <p class="text-secondary">
+              Edge-routed ingestion nodes process and replicate events globally
+              with zero cold starts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards 2 -->
+        <div class="col-md-4">
+          <div class="card p-4 rounded-4 border border-3 border-success h-100">
+            <img
+              src="/Images/Code & Pen.avif"
+              alt="Speedometer"
+              class="img-fluid w-100 rounded-3 mb-3 object-fit-cover"
+              style="height: 150px"
+            />
+            <span
+              class="d-inline-block align-self-start fw-bold bg-success-subtle text-success rounded px-3 py-1 mb-3"
+            >
+              02 . Portability</span
+            >
+            <h4 class="fw-bold">Open Standards</h4>
+            <p class="text-secondary">
+              Built natively on Apache Iceberg and Parquet so your data stays
+              yours without vendor lock-in.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards 3 -->
+        <div class="col-md-4">
+          <div class="card p-4 rounded-4 border border-3 border-danger h-100">
+            <img
+              src="/Images/CyberSecurity Lock.avif"
+              alt="Speedometer"
+              class="img-fluid w-100 rounded-3 mb-3 object-fit-cover"
+              style="height: 150px"
+            />
+            <span
+              class="d-inline-block align-self-start fw-bold bg-danger-subtle text-danger rounded px-3 py-1 mb-3"
+            >
+              03 . Zero-Trust</span
+            >
+            <h4 class="fw-bold">SOC2 Type II</h4>
+            <p class="text-secondary">
+              End-to-end TLS encryption, automated key rotation, and
+              fine-grained audit logs out of the box.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
